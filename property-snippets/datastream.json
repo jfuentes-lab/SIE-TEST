@@ -1,0 +1,20 @@
+{
+  "behaviors": [
+    {
+      "name": "datastream",
+      "options": {
+        "collectMidgressTraffic": false,
+        "logEnabled": true,
+        "logStreamName": [
+          "82236"
+        ],
+        "logStreamTitle": "",
+        "samplingPercentage": 100,
+        "streamType": "LOG"
+      }
+    }
+  ],
+  "name": "datastream",
+  "options": {},
+  "criteriaMustSatisfy": "all"
+}

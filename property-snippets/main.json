@@ -1,0 +1,179 @@
+{
+  "accountId": "act_1-6JHGX",
+  "contractId": "ctr_1-1NC95D",
+  "groupId": "grp_231801",
+  "propertyId": "prp_328340",
+  "propertyVersion": 384,
+  "etag": "8b2bb1a18719544917161392056eebd3f741d565",
+  "ruleFormat": "latest",
+  "rules": {
+    "name": "default",
+    "behaviors": [
+      {
+        "name": "origin",
+        "options": {
+          "cacheKeyHostname": "ORIGIN_HOSTNAME",
+          "compress": true,
+          "enableTrueClientIp": true,
+          "forwardHostHeader": "ORIGIN_HOSTNAME",
+          "hostname": "new-main.us-southeast-1.linodeobjects.com",
+          "httpPort": 80,
+          "httpsPort": 443,
+          "ipVersion": "IPV4",
+          "minTlsVersion": "DYNAMIC",
+          "originCertificate": "",
+          "originSni": false,
+          "originType": "CUSTOMER",
+          "ports": "",
+          "tlsVersionTitle": "",
+          "trueClientIpClientSetting": false,
+          "trueClientIpHeader": "True-Client-IP",
+          "verificationMode": "PLATFORM_SETTINGS"
+        }
+      },
+      {
+        "name": "cpCode",
+        "options": {
+          "value": {
+            "cpCodeLimits": {
+              "currentCapacity": -1665,
+              "limit": 3548,
+              "limitType": "account"
+            },
+            "createdDate": 1649201031000,
+            "description": "jfuentes.newhirelab.com",
+            "id": 1315434,
+            "name": "jfuentes.newhirelab.com",
+            "products": [
+              "Download_Delivery"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caching",
+        "options": {
+          "behavior": "MAX_AGE",
+          "mustRevalidate": false,
+          "ttl": "10m"
+        }
+      },
+      {
+        "name": "cacheKeyQueryParams",
+        "options": {
+          "behavior": "IGNORE",
+          "exactMatch": false,
+          "parameters": [
+            "authentication_token"
+          ]
+        }
+      }
+    ],
+    "children": [
+      "#include:datastream.json"
+    ],
+    "variables": [
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_QUERY",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_OUTCOME_URL",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_EPD",
+        "sensitive": false,
+        "value": "no"
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_BYPASS",
+        "sensitive": false,
+        "value": "true"
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_INVALID_DATE",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_INVALID_COOKIE",
+        "sensitive": false,
+        "value": "false"
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_ERROR",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_OFFEND",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_ORIGINAL_PATH",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_AUTH",
+        "sensitive": false,
+        "value": "false"
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_AUTHORIZATION",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_JWT_PAYLOAD_DECODED",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_PSN_SANDBOX_ID",
+        "sensitive": false,
+        "value": ""
+      },
+      {
+        "description": "",
+        "hidden": false,
+        "name": "PMUSER_JWT_PAYLOAD",
+        "sensitive": false,
+        "value": ""
+      }
+    ],
+    "options": {
+      "is_secure": true
+    }
+  }
+}
